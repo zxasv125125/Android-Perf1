@@ -1,10 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
-
+    <OutputType>Library</OutputType>
+    <AssemblyName>AndroidPerf</AssemblyName>
+    <EnableGamePathDetection>false</EnableGamePathDetection>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
@@ -12,38 +13,23 @@
   <ItemGroup>
     <Reference Include="StardewModdingAPI">
       <HintPath>lib/StardewModdingAPI.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-
     <Reference Include="StardewValley">
       <HintPath>lib/StardewValley.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-
-    <Reference Include="HarmonyLib">
+    <Reference Include="0Harmony">
       <HintPath>lib/0Harmony.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-    
     <Reference Include="MonoGame.Framework">
       <HintPath>lib/MonoGame.Framework.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-
     <Reference Include="Newtonsoft.Json">
       <HintPath>lib/Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
     </Reference>
-
-     <Reference Include="SMAPI.Toolkit.CoreInterfaces">
-      <HintPath>lib/SMAPI.Toolkit.CoreInterfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="TMXTile">
-      <HintPath>lib/TMXTile.dll</HintPath>
-    </Reference>
-    <Reference Include="xTile">
-      <HintPath>lib/xTile.dll</HintPath>
-    </Reference>
-
   </ItemGroup>
-
-  <ItemGroup>
-    <None Include="assets\**\*" CopyToOutputDirectory="Always" />
-  </ItemGroup>
-
 </Project>
