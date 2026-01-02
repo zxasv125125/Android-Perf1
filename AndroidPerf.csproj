@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="StardewModdingAPI">
+      <HintPath>lib/StardewModdingAPI.dll</HintPath>
+    </Reference>
+
+    <Reference Include="StardewValley">
+      <HintPath>lib/StardewValley.dll</HintPath>
+    </Reference>
+
+    <Reference Include="HarmonyLib">
+      <HintPath>lib/0Harmony.dll</HintPath>
+    </Reference>
+    
+    <Reference Include="MonoGame.Framework">
+      <HintPath>lib/MonoGame.Framework.dll</HintPath>
+    </Reference>
+
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+
+     <Reference Include="SMAPI.Toolkit.CoreInterfaces">
+      <HintPath>lib/SMAPI.Toolkit.CoreInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="TMXTile">
+      <HintPath>lib/TMXTile.dll</HintPath>
+    </Reference>
+    <Reference Include="xTile">
+      <HintPath>lib/xTile.dll</HintPath>
+    </Reference>
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="assets\**\*" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+
+</Project>
