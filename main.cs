@@ -1,13 +1,12 @@
 using System;
-using StardewModdingAPI;
 
 namespace AndroidPerf
 {
-    public class AndroidPerf : Mod
+    class Program
     {
-        public override void Entry(IModHelper helper)
+        static void Main()
         {
-            this.Monitor.Log("AndroidPerf Dummy mod loaded successfully.", LogLevel.Info);
+            Console.WriteLine("Android Performance.");
         }
     }
 }
